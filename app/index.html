@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="webrtc">
+<html lang="en" ng-app="webrtc" ng-cloak>
 <head>
 	<meta charset="UTF-8">
 	<title>WebRtc Experiment</title>
+	<link rel="stylesheet" href="styles/mycss/app.css">
+	<link rel="stylesheet" href="styles/mycss/main.css">
+	<link rel="stylesheet" href="styles/mycss/videocall.css">
+	<link rel="stylesheet" href="styles/bootstrap/css/bootstrap.css">
 </head>
 <body ng-controller="appCtrl">
-	
+	<button class="custCloseButton" ng-click="main.functions.closeApp()"></button>
 	<div ui-view></div>
 	<script src="js/vendor/angular/angular.min.js"></script>
 	<script src="js/vendor/angular-ui-router/angular-ui-router.min.js"></script>
+	<script src="js/vendor/ng-electron/ng-electron.js"></script>
 	<script src="js/application/app.js"></script>
 	<script src="js/application/controllers/appctrl.controller.js"></script>
 	<script src="js/application/controllers/main.controller.js"></script>
 	<script src="js/application/controllers/videocall.controller.js"></script>
+	<script src="js/application/controllers/error.controller.js"></script>
+	<script src="js/vendor/simplewebrtc/simplewebrtc.js"></script>
+	<script src="styles/bootstrap/js/bootstrap.min.js"></script>
+	<script src="styles/bootstrap/js/ui-bootstrap.min.js"></script>
+	<script src="styles/bootstrap/js/ui-boostrap-tpls.min.js"></script>
+	
 </body>
 </html>

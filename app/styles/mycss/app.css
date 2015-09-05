@@ -1,0 +1,24 @@
+html, 
+body{
+	-webkit-app-region: drag;
+	background: #084465;
+	color: white;
+}
+
+button, input{
+    -webkit-app-region: no-drag;
+}
+
+.custCloseButton {
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    text-indent: -10000px;
+    top: 6px;
+    width: 32px;
+    background: transparent url('../../images/close.png') no-repeat 2px 2px;
+    border-radius: 5px 5px 5px 5px;
+    background-size: 24px 24px;
+    right: 6px;
+}

@@ -1,5 +1,14 @@
-<div>
-	<h1>This is the videocall template</h1>
+<div id="videocallDiv">
+	<span id="title">VideoCall</span>
 	<br>
-	<label ng-bind="test"></label>
+	<button class="btn btn-danger" ng-click="functions.endVideoCall()">End Video Call</button>
+	<br>
+	<video height="130" width="130" id="localVideo"></video>
+  	<div id="remote">
+  		<div id="remotesVideos"></div>
+  	</div>
 </div>
+
+
+
+

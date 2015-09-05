@@ -4,7 +4,8 @@
   "description": "Experimental cross-platform desktop app using electron and SimpleWebRTC",
   "main": "app.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . MyApp --platform=darwin --arch=all --version=0.31.2 --icon=Icon.icns --asar=true"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/federicous/webrtc-experiment#readme",
   "devDependencies": {
     "electron-prebuilt": "^0.31.2"
+  },
+  "dependencies": {
+    "diskdb": "^0.1.14"
   }
 }

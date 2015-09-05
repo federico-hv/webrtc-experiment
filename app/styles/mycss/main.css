@@ -1,0 +1,12 @@
+
+#mainDiv{
+	background: #084465;
+	color: white;
+	margin-top:25%;
+	text-align:center;
+}
+
+#mainDiv > input {
+	color:black;
+	font-size:30px; 
+}

@@ -4,7 +4,8 @@
  * Defines the app module with all the plugins
  */
 var app = angular.module('webrtc', [
-		'ui.router'
+		'ui.router',
+		'ngElectron'
 	]);
 
 /**
