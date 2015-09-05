@@ -31,7 +31,7 @@ app.controller('videocallCtrl', ['$scope', 'electron',function($scope, electron)
 			webrtc.on('readyToCall', function () {
 			  alert('Video Call Started!');
 			  // you can name it anything
-			  webrtc.joinRoom('zBoxRoomDesafioNodejS');
+			  webrtc.joinRoom($scope.main.room.name);
 			});
 		},
 		endVideoCall : function(){
